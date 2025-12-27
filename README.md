@@ -21,6 +21,8 @@ $ git clone -b scarthgap https://github.com/sbabic/meta-swupdate
 
 $ git clone -b scarthgap https://github.com/agherzan/meta-raspberrypi
 
+$ git clone https://github.com/moto-timo/meta-lts-mixins.git
+
 $ source oe-init-build-env
 
 
