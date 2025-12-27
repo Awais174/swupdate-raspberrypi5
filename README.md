@@ -13,7 +13,7 @@ Clone required additional layers:
 
 $ git clone -b scarthgap https://github.com/openembedded/meta-openembedded
 
-$ git clone https://github.com/Awais174/meta_rpi_network
+$ git clone https://github.com/Awais174/meta-rpi-network
 
 $ git clone -b dev/rpi5 https://github.com/Awais174/meta-swupdate-boards
 
