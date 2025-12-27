@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# flashing the image in the sdcard
+
+lsblk
+echo "proceed at your own risk; ensure that /dev/sdb is the correcrt device to write image to"
+
+cd poky/build/tmp-rpi5/deploy/images/raspberrypi5
+echo "unmounting the partitions if already present"
+
+if mount | grep /dev/sdb; then
+    echo "Unmounting partitions on /dev/sdb"
+    sudo umount /dev/sdb*
+fi
+
+
+sudo dd if=core-image-full-cmdline-raspberrypi5.rootfs.wic of=/dev/sdb bs=4M status=progress
+
+echo "synching..."
+sync
+echo "Checking partitions on /dev/mmcblk0..."
+sudo fdisk -l /dev/sdb
