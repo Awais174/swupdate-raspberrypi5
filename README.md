@@ -9,7 +9,7 @@ $ git clone -b scarthgap git://git.yoctoproject.org/poky
 $ cd poky
 
 
-Clone required additional layers:
+Clone required additional layers inside poky folder:
 
 $ git clone -b scarthgap https://github.com/openembedded/meta-openembedded
 
@@ -28,6 +28,6 @@ $ source oe-init-build-env
 
 Replace the generated build folder with the 'build' folder provided in this repo to use pre-configure BBLAYER file and quickly build for rpi, rpi4 or rpi5 using bitbake multiconfig. Alternatively, you can manually update the generated build/bblayers.conf and local.conf using the template provided in provided 'build' folder, to build swupdate layer.
 
-Move all additional layers inside poky folder.
-
 $ bitbake mc:rpi5:update-image
+
+$ go back to top dir folder which contains 'flash_sd_card.sh' this script can be optionally used to flash image to sd-card (please take care of updating script as per your raspberry pi model and correct /dev/sd*).
