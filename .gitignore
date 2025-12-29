@@ -1,0 +1,5 @@
+poky/
+meta-openembedded/
+meta-swupdate-boards/
+meta-swupdate/
+meta-rpi-network/

@@ -1,23 +1,26 @@
-[submodule "meta-raspberrypi"]
-	path = meta-raspberrypi
-	url = https://github.com/agherzan/meta-raspberrypi
-	branch = scarthgap
 [submodule "poky"]
 	path = poky
 	url = git://git.yoctoproject.org/poky
 	branch = scarthgap
+[submodule "meta-openembedded"]
+	path = extra-layers/meta-openembedded
+	url = https://github.com/openembedded/meta-openembedded
+	branch = scarthgap
+[submodule "meta-raspberrypi"]
+	path = extra-layers/meta-raspberrypi
+	url = https://github.com/agherzan/meta-raspberrypi
+	branch = scarthgap
 [submodule "meta-swupdate"]
-	path = meta-swupdate
+	path = extra-layers/meta-swupdate
 	url = https://github.com/sbabic/meta-swupdate
 	branch = scarthgap
 [submodule "meta-swupdate-boards"]
-	path = meta-swupdate-boards
+	path = extra-layers/meta-swupdate-boards
 	url = https://github.com/Awais174/meta-swupdate-boards
 	branch = dev/rpi5
-[submodule "meta-openembedded"]
-	path = meta-openembedded
-	url = https://github.com/openembedded/meta-openembedded
-	branch = scarthgap
-[submodule "meta_rpi_network"]
-	path = meta_rpi_network
-	url = https://github.com/Awais174/meta_rpi_network
+[submodule "meta-rpi-network"]
+	path = extra-layers/meta-rpi-network
+	url = https://github.com/Awais174/meta-rpi-network
+[submodule "meta-lts-mixins"]
+	path = extra-layers/meta-lts-mixins
+	url = https://github.com/moto-timo/meta-lts-mixins.git
